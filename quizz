@@ -29,5 +29,5 @@ fun main(){
     val harga = itembarang(item)
     val diskon = diskon(harga)
     val totalharga = totalharga(harga,diskon)
-    println("Harga $item adalah \t: $harga \nDengan diskon yaitu \t: $diskon \nTotal harga menjadi \t: $totalharga")
+    println("\tSTRUK BELANJA \n\nHarga $item adalah \t: $harga \nDengan diskon yaitu \t: $diskon \nTotal harga menjadi \t: $totalharga")
 }
