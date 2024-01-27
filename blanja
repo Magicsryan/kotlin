@@ -1,0 +1,29 @@
+fun itembarang(item:String):Int {
+    return when (item) {
+        "Baju" -> 100000
+        "Topi" ->15000
+        "Celana" -> 75000
+        else ->0
+    }
+}
+fun diskon(harga:Int,):Int{
+    return if (harga>=100000){
+        (harga * 0.05).toInt()
+    }
+    else {
+        println("Anda tidak mendapatkan diskon")
+        0
+    }
+    
+}
+fun totalharga(harga:Int, diskon:Int):Int {
+    return harga - diskon
+}
+fun main(){
+    val item = "Topi"
+    val harga = itembarang(item)
+    val diskon = diskon(harga)
+    val totalharga = totalharga(harga,diskon)
+    println("Harga $item adalah \t: $harga \nDengan diskon yaitu \t: $diskon \nTotal harga menjadi \t: $totalharga")
+    
+}
